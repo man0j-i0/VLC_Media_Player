@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <img src="https://icons.veryicon.com/png/System/Circle/vlc.png" alt="title-logo" class="title-img">
+            <h1 class="title-text">VLC-media player</h1>
+        </div>
+        <div class="menu-bar">
+            <!--Open-->
+            <div class="menu">
+                <div class="menu-btn" id="video-btn">Open</div>
+                <input type="file" id="videoInput" class="videoInput">
+            </div>
+            <!--Playback-->
+            <div class="menu">
+                <div class="menu-btn">Playback</div>
+                <ul class="menu-items">
+                    <li id = "SpeedUp">Speed up</li>
+                    <li id = "SpeedDown">Speed down</li>
+                </ul>
+            </div>
+            <!--Audio-->
+            <div class="menu">
+                <div class="menu-btn">Audio</div>
+                <ul class="menu-items">
+                    <li id = "VolumeUp">Volume up</li>
+                    <li id = "VolumeDown">Volume down</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main"></main>
+    <div class="toast">Element</div>
+    <footer>
+        <!--slider-->
+        <input type="range" class = "slider" id="video-slider" value="0" min="0" step="1">
+        <!--icons-->
+        <div class="left-icons">
+            <button class="btn" id="pause" style="display: inline;"> <i class="fa-solid fa-pause"></i> </button>
+            <button class="btn" id="play" style="display: none;"> <i class="fa-solid fa-play"></i> </button>
+            <button class="btn" id="backward"><i class="fa-solid fa-backward"></i></button>
+            <button class="btn" id="stop"><i class="fa-solid fa-stop"></i></button>
+            <button class="btn" id="forward"><i class="fa-solid fa-forward"></i></button>
+        </div>
+        <div class="right-icons">
+            <button class="btn" id="expand"><i class="fa-solid fa-expand"></i></button>
+        </div>
+    </footer>    
+    <script src = "script.js"></script>
+</body>
+</html>
